@@ -51,7 +51,7 @@ def main():
     headers = ["Ticker", "Name", "pegRatio", "marketCap", "freeCashflow", "sharesOutstanding", "currentPrice", "percentHeldInsiders"]
     # This will be done as a chron/batch job that writes daily
     today = date.today()
-    file_name = "Insider Ownership " + str(today)
+    file_name = "Insider Ownership " + str(today) + ".csv"
     with open(file_name, 'w', newline='') as file1:
         writer = csv.writer(file1)
         writer.writerow(headers)
